@@ -78,3 +78,12 @@ La app tambien incluye un dataset demo sintetico para que puedas probar todo de 
 5. Genera una recomendacion con OpenAI.
 6. Graba un video demo de maximo 3 minutos.
 
+## funciona asi
+
+Carga un CSV con datos de estudiantes.
+Usa la columna Target para saber quién desertó y quién no.
+Entrena un modelo de Machine Learning, Random Forest.
+Muestra métricas como accuracy, precision, recall, F1 y AUC-ROC.
+Permite seleccionar un estudiante y ver su probabilidad de deserción.
+Usa SHAP para explicar qué factores influyeron más en esa predicción.
+Si agregas tu API key, OpenAI genera una recomendación escrita para apoyar al estudiante.
