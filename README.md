@@ -1,7 +1,10 @@
 ## VIDEO YOUTUBE
+https://youtu.be/hj7ExfjDvVw?si=IXwmOqsnor7jJ4fr
+
 
 
 # Asistente IA para alerta temprana de desercion estudiantil
+
 
 Proyecto final de Inteligencia Artificial: predice riesgo de desercion universitaria con Machine Learning, explica los factores principales con SHAP y genera recomendaciones en lenguaje natural usando la API de OpenAI.
 
