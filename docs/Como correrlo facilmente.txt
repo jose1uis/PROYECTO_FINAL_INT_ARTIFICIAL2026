@@ -1,0 +1,18 @@
+¿Cómo correrlo?
+
+cd C:\Users\Lenovo\Desktop\proyecto-desercion-ia
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+streamlit run app.py 						(se usa un entorno virtual para evitar problemas de versiones o mezclar cosas)
+
+(ctrl + c para terminar)
+("deactivate" en la terminal para salir del entorno virtual)
+
+
+¿Cómo volverlo a correr?
+
+cd C:\Users\Lenovo\Desktop\proyecto-desercion-ia
+.venv\Scripts\actívate (si se quiere volver a entrar en el entorno virtual)
+
+streamlit run app.py

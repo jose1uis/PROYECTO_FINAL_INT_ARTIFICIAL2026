@@ -22,6 +22,11 @@ def load_demo_data() -> pd.DataFrame:
     return make_demo_dataset()
 
 
+@st.cache_data
+def load_uploaded_csv(file) -> pd.DataFrame:
+    return pd.read_csv(file, sep=None, engine="python")
+
+
 @st.cache_resource
 def cached_training(df: pd.DataFrame, target_column: str, positive_label: str):
     x, y = split_features_target(df, DatasetConfig(target_column, positive_label))
@@ -39,7 +44,7 @@ with st.sidebar:
     st.header("Datos")
     uploaded = st.file_uploader("Carga un CSV", type=["csv"])
     if uploaded:
-        df = pd.read_csv(uploaded)
+        df = load_uploaded_csv(uploaded)
     else:
         df = load_demo_data()
         st.info("Usando dataset demo sintetico.")
@@ -161,4 +166,3 @@ with tab_student:
             recommendation = generate_recommendation(probability, summary)
         st.markdown("### Recomendacion")
         st.write(recommendation)
-
