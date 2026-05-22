@@ -72,7 +72,7 @@ La app tambien incluye un dataset demo sintetico para que puedas probar todo de 
     └── modeling.py
 ```
 
-## Como usarlo en la entrega
+## Como usarlo correctamente
 
 1. Corre la app con el dataset demo.
 2. Descarga el dataset real y cargalo desde la barra lateral.
